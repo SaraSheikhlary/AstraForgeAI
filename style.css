@@ -1,75 +1,71 @@
-/* =========================================
-   ASTRAFORGE AI - CORE STYLESHEET
-   ========================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap');
 
 :root {
-  --space-black: #05070A;
-  --text-primary: #E2E8F0;
-  --text-muted: #8F9BA8;
-  --astra-cyan: #00F0FF; /* Astrielle AI Accent */
-  --astra-red: #FF3B30;  /* AstroShield AI Accent */
-  --panel-bg: rgba(255, 255, 255, 0.03);
+  --bg: #05070A;
+  --text: #E2E8F0;
+  --accent-cyan: #00F0FF;
+  --accent-red: #FF3B30;
 }
 
-/* Base Body Override */
-body, .notion-page {
-  background-color: var(--space-black) !important;
-  color: var(--text-primary) !important;
-  font-family: 'Inter', sans-serif !important;
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Typography Enhancements */
-h1, h2, h3, .notion-header__title {
-  font-family: 'Space Grotesk', sans-serif !important;
-  color: #FFFFFF !important;
-  letter-spacing: -0.03em;
+/* Navigation Bar */
+nav {
+  background: rgba(5, 7, 10, 0.9);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  display: flex;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #8F9BA8;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-cyan);
+}
+
+/* Main Content Container */
+.container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+h1, h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #FFFFFF;
 }
 
 h1 {
-  font-size: 2.5rem !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 2.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 0.5rem;
 }
 
-/* Potion Navigation Bar Customization */
-.potion-navbar {
-  background: rgba(5, 7, 10, 0.85) !important;
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0, 240, 255, 0.15); /* Subtle cyan glow */
+.tech-box {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-cyan);
+  margin-top: 2rem;
 }
 
-.potion-navbar a {
-  color: var(--text-muted) !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.potion-navbar a:hover {
-  color: var(--astra-cyan) !important;
-  text-shadow: 0px 0px 8px rgba(0, 240, 255, 0.5);
-}
-
-/* Tech Specs Callout Boxes */
-.notion-callout {
-  background-color: var(--panel-bg) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 4px !important;
-  border-left: 4px solid var(--astra-cyan) !important;
-}
-
-/* Code Blocks for Tech Stacks */
-.notion-code {
-  background-color: #000000 !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  border-radius: 2px !important;
-}
-
-/* Clean up Notion defaults */
-.notion-page-cover, .notion-page-icon {
-  border-radius: 0px !important;
+.tech-box.red {
+  border-left: 4px solid var(--accent-red);
 }
