@@ -1,0 +1,75 @@
+/* =========================================
+   ASTRAFORGE AI - CORE STYLESHEET
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --space-black: #05070A;
+  --text-primary: #E2E8F0;
+  --text-muted: #8F9BA8;
+  --astra-cyan: #00F0FF; /* Astrielle AI Accent */
+  --astra-red: #FF3B30;  /* AstroShield AI Accent */
+  --panel-bg: rgba(255, 255, 255, 0.03);
+}
+
+/* Base Body Override */
+body, .notion-page {
+  background-color: var(--space-black) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, .notion-header__title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: #FFFFFF !important;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: 2.5rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+/* Potion Navigation Bar Customization */
+.potion-navbar {
+  background: rgba(5, 7, 10, 0.85) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15); /* Subtle cyan glow */
+}
+
+.potion-navbar a {
+  color: var(--text-muted) !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.potion-navbar a:hover {
+  color: var(--astra-cyan) !important;
+  text-shadow: 0px 0px 8px rgba(0, 240, 255, 0.5);
+}
+
+/* Tech Specs Callout Boxes */
+.notion-callout {
+  background-color: var(--panel-bg) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px !important;
+  border-left: 4px solid var(--astra-cyan) !important;
+}
+
+/* Code Blocks for Tech Stacks */
+.notion-code {
+  background-color: #000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 2px !important;
+}
+
+/* Clean up Notion defaults */
+.notion-page-cover, .notion-page-icon {
+  border-radius: 0px !important;
+}
