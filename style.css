@@ -143,3 +143,7 @@ h1 {
     height: 60px; /* Example height, mention user adjustment */
     max-width: 100%; /* Ensure standard scaling on smaller screens */
 }
+/* Styling for the website footer */
+footer {
+    padding: 2rem 0; /* Add standard vertical spacing */
+}
