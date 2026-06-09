@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --bg: #05070A;
@@ -7,21 +7,24 @@
   --accent-red: #FF3B30;
 }
 
-/* Fix: Apply background to HTML so Body::before can sit on top of it */
 html {
   background-color: var(--bg);
   min-height: 100vh;
 }
 
 body {
-  background-color: transparent; /* Changed from var(--bg) */
+  background-color: transparent;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  /* The ultimate sleek, modern sans-serif font stack */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.7;          /* Matches the spacious line spacing in the SpaceX quote */
+  letter-spacing: -0.01em;    /* Gives it that premium, sleek editorial feel */
   position: relative;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased; /* Makes the text look ultra-sharp on dark backgrounds */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Background Logo Watermark */
