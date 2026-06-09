@@ -133,3 +133,13 @@ h1 {
 .tech-box ul li:last-child {
     margin-bottom: 0; 
 }
+/* Styling for the logo container and image */
+.top-logo-wrapper {
+    padding: 1rem 2rem; /* Add some space around the logo */
+}
+
+.top-logo {
+    width: auto; /* Allow standard resizing, mention to adjust width/height for exact fit */
+    height: 60px; /* Example height, mention user adjustment */
+    max-width: 100%; /* Ensure standard scaling on smaller screens */
+}
