@@ -7,8 +7,14 @@
   --accent-red: #FF3B30;
 }
 
-body {
+/* Fix: Apply background to HTML so Body::before can sit on top of it */
+html {
   background-color: var(--bg);
+  min-height: 100vh;
+}
+
+body {
+  background-color: transparent; /* Changed from var(--bg) */
   color: var(--text);
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -29,8 +35,8 @@ body::before {
   background-image: url('logo.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px; /* Adjust size to your preference */
-  opacity: 0.05; /* Very subtle watermark effect */
+  background-size: 500px; 
+  opacity: 0.1; /* Slightly increased for visibility */
   z-index: -1;
   pointer-events: none;
 }
@@ -41,7 +47,7 @@ nav {
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(0, 240, 255, 0.15);
   display: flex;
-  justify-content: center; /* Centers the menu items */
+  justify-content: center;
   gap: 3rem;
   position: sticky;
   top: 0;
@@ -62,7 +68,7 @@ nav a:hover {
   color: var(--accent-cyan);
 }
 
-/* Main Content Container - Fixes the width/spacing issues */
+/* Main Content Container */
 .container {
   max-width: 800px;
   margin: 4rem auto;
@@ -86,7 +92,7 @@ h1 {
   padding: 2rem;
   border-left: 4px solid var(--accent-cyan);
   margin-top: 2rem;
-  border-radius: 0 4px 4px 0; /* Slight tech-styling */
+  border-radius: 0 4px 4px 0;
 }
 
 .tech-box.red {
