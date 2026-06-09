@@ -60,7 +60,7 @@ nav {
 nav a {
   color: #8F9BA8;
   text-decoration: none;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif; /* Updated to clean SpaceX style */
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 2px;
@@ -72,7 +72,6 @@ nav a:hover {
 }
 
 /* Main Content Container */
-/* Update this specific block in your style.css */
 .container {
   max-width: 800px;
   margin: 4rem auto; 
@@ -81,7 +80,9 @@ nav a:hover {
 }
 
 h1, h2 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; /* Updated to clean SpaceX style */
+  font-weight: 600;                 /* Solid, structural weight */
+  letter-spacing: -0.02em;          /* Tighter tracking for titles */
   color: #FFFFFF;
   margin-bottom: 1.5rem;
 }
@@ -103,6 +104,7 @@ h1 {
 .tech-box.red {
   border-left: 4px solid var(--accent-red);
 }
+
 /* Image Gallery Style */
 .image-gallery {
     display: grid;
@@ -117,9 +119,6 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-/* Add this to your style.css */
-.image-gallery img {
     cursor: zoom-in;
     transition: transform 0.2s; /* adds a nice hover effect */
 }
@@ -127,6 +126,7 @@ h1 {
 .image-gallery img:hover {
     transform: scale(1.02); /* slight zoom on hover */
 }
+
 /* Add spacing between list items in the tech box */
 .tech-box ul li {
     margin-bottom: 1.2rem; /* This creates the space between the dots */
@@ -136,16 +136,18 @@ h1 {
 .tech-box ul li:last-child {
     margin-bottom: 0; 
 }
+
 /* Styling for the logo container and image */
 .top-logo-wrapper {
     padding: 1rem 2rem; /* Add some space around the logo */
 }
 
 .top-logo {
-    width: auto; /* Allow standard resizing, mention to adjust width/height for exact fit */
-    height: 60px; /* Example height, mention user adjustment */
+    width: auto; /* Allow standard resizing */
+    height: 60px; /* Precise layout control */
     max-width: 100%; /* Ensure standard scaling on smaller screens */
 }
+
 /* Styling for the website footer */
 footer {
     padding: 2rem 0; /* Add standard vertical spacing */
