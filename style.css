@@ -124,3 +124,12 @@ h1 {
 .image-gallery img:hover {
     transform: scale(1.02); /* slight zoom on hover */
 }
+/* Add spacing between list items in the tech box */
+.tech-box ul li {
+    margin-bottom: 1.2rem; /* This creates the space between the dots */
+}
+
+/* This keeps the bottom of the box tidy by not adding space after the final dot */
+.tech-box ul li:last-child {
+    margin-bottom: 0; 
+}
