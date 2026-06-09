@@ -14,17 +14,38 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background Logo Watermark */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px; /* Adjust size to your preference */
+  opacity: 0.05; /* Very subtle watermark effect */
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Navigation Bar */
 nav {
-  background: rgba(5, 7, 10, 0.9);
+  background: rgba(5, 7, 10, 0.95);
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(0, 240, 255, 0.15);
   display: flex;
-  gap: 2rem;
+  justify-content: center; /* Centers the menu items */
+  gap: 3rem;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 nav a {
@@ -33,7 +54,7 @@ nav a {
   font-family: 'Space Grotesk', sans-serif;
   text-transform: uppercase;
   font-size: 0.85rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   transition: 0.3s;
 }
 
@@ -41,9 +62,9 @@ nav a:hover {
   color: var(--accent-cyan);
 }
 
-/* Main Content Container */
+/* Main Content Container - Fixes the width/spacing issues */
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 4rem auto;
   padding: 0 2rem;
 }
@@ -51,19 +72,21 @@ nav a:hover {
 h1, h2 {
   font-family: 'Space Grotesk', sans-serif;
   color: #FFFFFF;
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .tech-box {
   background: rgba(255, 255, 255, 0.03);
-  padding: 1.5rem;
+  padding: 2rem;
   border-left: 4px solid var(--accent-cyan);
   margin-top: 2rem;
+  border-radius: 0 4px 4px 0; /* Slight tech-styling */
 }
 
 .tech-box.red {
