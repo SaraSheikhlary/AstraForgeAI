@@ -69,10 +69,12 @@ nav a:hover {
 }
 
 /* Main Content Container */
+/* Update this specific block in your style.css */
 .container {
   max-width: 800px;
-  margin: 4rem auto;      /* This centers the container horizontally */
-  padding: 0 4rem;        /* This adds 4rem of space on left/right for smaller screens */
+  margin: 4rem auto; 
+  padding: 0 4rem;
+  text-align: center; /* This centers the text inside the block */
 }
 
 h1, h2 {
