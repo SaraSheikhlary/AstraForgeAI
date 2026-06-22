@@ -71,15 +71,19 @@ nav a:hover {
   color: var(--accent-cyan);
 }
 
-/* Center the list block while keeping text left-aligned */
-.container ul {
-    display: inline-block;     /* Makes the list behave like a centered element */
-    text-align: left;          /* Keeps your text clean and readable */
-    margin: 0 auto;            /* Standard centering */
-    width: fit-content;        /* Ensures the box is only as wide as the text */
-    padding-left: 0;           /* Removes default browser indentation */
+/* 1. Ensure the parent container centers everything inside it */
+.container {
+    text-align: center;
 }
 
+/* 2. Force the list to behave as a centered block */
+.container ul {
+    display: inline-block;     /* Makes the list a single block we can move */
+    text-align: left;          /* Keeps your text clean and readable */
+    margin: 0 auto;            /* Centers that block */
+    padding-left: 20px;        /* Adds just enough room for the bullets */
+    max-width: 800px;          /* Prevents it from getting too wide */
+}
 /* Optional: Add space between bullets */
 .container li {
     margin-bottom: 10px;
