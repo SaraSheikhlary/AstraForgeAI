@@ -60,7 +60,7 @@ nav {
 nav a {
   color: #8F9BA8;
   text-decoration: none;
-  font-family: 'Inter', sans-serif; /* Updated to clean SpaceX style */
+  font-family: 'Inter', sans-serif; 
   text-transform: none;
   font-size: 0.85rem;
   letter-spacing: 2px;
@@ -72,11 +72,12 @@ nav a:hover {
 }
 
 /* Main Content Container */
-.container {
-  max-width: 800px;
-  margin: 4rem auto; 
-  padding: 0 4rem;
-  text-align: center; /* This centers the text inside the block */
+.container ul {
+    text-align: left;       /* Aligns the text inside bullets to the left */
+    display: inline-block;  /* Allows the list to be centered as a block */
+    margin: 0 auto;         /* Centers the list block */
+    max-width: 800px;       /* Ensures it doesn't stretch too wide on large screens */
+    padding-left: 20px;     /* Adds a bit of breathing room from the left edge */
 }
 
 h1, h2 {
