@@ -71,19 +71,19 @@ nav a:hover {
   color: var(--accent-cyan);
 }
 
-/* Center the container text */
-.container {
-    text-align: center;
-}
-
-/* Treat the list as a centered block with left-aligned text */
+/* Center the list block while keeping text left-aligned */
 .container ul {
-    display: inline-block;
-    text-align: left;
-    margin: 0 auto;
-    padding-left: 20px; /* Adjust this to control how far the bullets are from the left */
+    display: inline-block;     /* Makes the list behave like a centered element */
+    text-align: left;          /* Keeps your text clean and readable */
+    margin: 0 auto;            /* Standard centering */
+    width: fit-content;        /* Ensures the box is only as wide as the text */
+    padding-left: 0;           /* Removes default browser indentation */
 }
 
+/* Optional: Add space between bullets */
+.container li {
+    margin-bottom: 10px;
+}
 h1, h2 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; /* Updated to clean SpaceX style */
   font-weight: 600;                 /* Solid, structural weight */
