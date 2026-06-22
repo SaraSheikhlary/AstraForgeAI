@@ -76,13 +76,22 @@ nav a:hover {
     text-align: center;
 }
 
-/* 2. Force the list to behave as a centered block */
+/* Center everything inside the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;    /* Centers items horizontally */
+    text-align: center;     /* Ensures text elements are centered */
+    max-width: 800px;       /* Keeps it looking good on wide screens */
+    margin: 0 auto;         /* Centers the container itself on the page */
+}
+
+/* Ensure the list stays left-aligned *within* its centered block */
 .container ul {
-    display: inline-block;     /* Makes the list a single block we can move */
-    text-align: left;          /* Keeps your text clean and readable */
-    margin: 0 auto;            /* Centers that block */
-    padding-left: 20px;        /* Adds just enough room for the bullets */
-    max-width: 800px;          /* Prevents it from getting too wide */
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 20px 0;
 }
 /* Optional: Add space between bullets */
 .container li {
