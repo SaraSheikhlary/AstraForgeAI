@@ -26,17 +26,33 @@
 
         <h2>The Problem: The Cloud-Dependency Trap</h2>
         <p>Today’s cybersecurity is tethered to centralized cloud servers. For critical assets—like satellite constellations, autonomous robots, and industrial grids—this is a fatal vulnerability.</p>
-        <p><strong>Latency is a risk:</strong> Real-time threats cannot wait for a cloud round-trip.<br>
+        <p><strong>Latency is a risk:</strong> Real-time threats cannot wait for a high-latency cloud round-trip.<br>
         <strong>Connection is an assumption:</strong> If a device is jammed, disconnected, or operating in deep space, it becomes defenseless.<br>
-        <strong>Centralization is a target:</strong> A single cloud failure disables the entire fleet’s security.</p>
+        <strong>Centralization is a target:</strong> A single cloud failure or network drop disables an entire fleet’s security.</p>
 
         <h2>The Solution: Scalable, Decentralized Intelligence</h2>
-        <p>Shieldix is a mission-aware, autonomous security engine engineered to live directly on edge hardware. By completely decoupling the core security processing engine from the visual telemetry layer, we provide high-throughput, offline protection for the world’s most critical systems without introducing single points of failure.</p>
+        <p>Shieldix is an autonomous, mission-aware security engine engineered to live directly on resource-constrained edge hardware. By completely decoupling the core security processing engine from the visual telemetry layer, Shieldix provides high-throughput, offline protection without introducing single points of failure.</p>
+
+        <h2>🚀 Proven in Production: Real-World Hardware Validation</h2>
+        <p>Shieldix has officially transitioned from simulation to <strong>proven physical hardware deployment</strong>. Tested across a distributed edge topology, our architecture demonstrates seamless cross-network orchestration:</p>
+        <ul>
+            <li><strong>Autonomous Edge Node:</strong> Physical Raspberry Pi host running the decoupled backend engine independently, enforcing behavioral policies and threat analysis entirely offline.</li>
+            <li><strong>Remote Command & Telemetry Center:</strong> Client-side management dashboard communicating over network protocols to stream live telemetry, performance metrics, and policy controls in real time.</li>
+            <li><strong>Live Threat Enforcement:</strong> Actively evaluates incoming traffic streams, maintaining normal operational baselines (ALLOW) while instantly triggering high-speed circuit-breakers to drop Layer 7 attack vectors (BLOCK) on impact.</li>
+        </ul>
+
+        <!-- Live Hardware Gallery Section -->
+        <div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+            <img src="a7.png" alt="Shieldix Autonomous Edge Engine Execution" style="max-width: 31%; height: auto; border-radius: 8px;">
+            <img src="a8.png" alt="Shieldix Live Control Center Dashboard" style="max-width: 31%; height: auto; border-radius: 8px;">
+            <img src="a9.png" alt="Shieldix Real-Time Telemetry & Latency Stability" style="max-width: 31%; height: auto; border-radius: 8px;">
+        </div>
+        <!-- End Image Section -->
 
         <h2>Scale & Critical Applications</h2>
         <p>Built for massive, high-velocity deployments, our architecture thrives where connectivity is limited and stakes are high:</p>
         <ul>
-            <li><strong>Satellite Constellations & Space Mesh:</strong> Shieldix enables true Decentralized Swarm Immunity. When a threat is detected, nodes pool localized telemetry data to instantly immunize the entire fleet across orbital networks.</li>
+            <li><strong>Satellite Constellations & Space Mesh:</strong> Shieldix enables true Decentralized Swarm Immunity. When a threat is detected, nodes pool localized telemetry data to instantly immunize the entire fleet across orbital networks without cloud reliance.</li>
             <li><strong>Robotics & Autonomous Drones:</strong> Shieldix operates with microsecond execution times to block malicious packet injections without interrupting flight-critical control loops.</li>
             <li><strong>Edge AI & NVIDIA Hardware:</strong> Architected for AI-optimized silicon, such as NVIDIA Jetson modules, to perform complex, context-aware anomaly detection directly at the source.</li>
             <li><strong>Critical Industrial Infrastructure:</strong> From smart power grids to planetary-scale infrastructure like Axiom OS, our offline-first architecture ensures flawless protection during severe network outages.</li>
@@ -44,25 +60,18 @@
 
         <h2>Technology Pillars</h2>
         <ul>
-            <li><strong>1. Isolation Forest Architecture:</strong> Behavioral AI that learns "normal" system status and detects complex anomalies in real-time without bulky databases or persistent cloud synchronization.</li>
+            <li><strong>1. Isolation Forest Behavioral Architecture:</strong> Uses lightweight behavioral AI to model "normal" system states and detect complex anomalies in real time without heavy database overhead or persistent cloud synchronization.</li>
             <li><strong>2. Contextual Policy Matrix:</strong> Ingests dynamic device telemetry (Device Role, Mission Phase, Connectivity Status) to intelligently adjust sensitivity thresholds, eliminating false-positive lockdowns during high-intensity operations.</li>
             <li><strong>3. Multi-Node Swarm Consensus (Threat Voting):</strong> Protects against mesh poisoning and sensor corruption. Before a network-wide lockdown occurs, threat signatures must pass a strict consensus validation threshold across independent edge nodes, ensuring malicious or malfunctioning sensors cannot compromise fleet integrity.</li>
-            <li><strong>4. Resilient A/B Memory Architecture (Zero-Downtime OTA):</strong> Enables secure, real-time security updates in zero-downtime environments. AI models and security patches are staged in an isolated memory partition (Bank B) and hot-swapped seamlessly mid-operation without requiring system reboots or dropping a single packet of telemetry.</li>
-            <li><strong>5. Microsecond Swarm Circuit-Breaker:</strong> Optimized for resource-constrained edge hardware. When a threat signature triggers swarm-wide immunization, the engine instantly switches from intensive AI signature processing (~16.9 ms) to microsecond-scale blacklisting (0.002 ms−0.018 ms). This circuit-breaker protocol shields edge devices from CPU and battery exhaustion during high-mass volumetric attacks.</li>
+            <li><strong>4. Resilient A/B Memory Architecture (Zero-Downtime OTA):</strong> Staged in an isolated memory partition (Bank B), AI models and security patches are hot-swapped seamlessly mid-operation without requiring system reboots or dropping a single packet of telemetry.</li>
+            <li><strong>5. Microsecond Swarm Circuit-Breaker:</strong> Optimized for resource-constrained edge hardware. When a threat signature triggers swarm-wide immunization, the engine instantly switches from intensive AI signature processing (~13 ms) to ultra-fast blacklisting (0.002 ms – 0.018 ms). This circuit-breaker protocol shields edge devices from CPU and battery exhaustion during high-mass volumetric attacks.</li>
             <li><strong>6. Enterprise-Grade Auditability:</strong> Built for compliance and strict institutional workflows. The underlying engine provides continuous, tamper-resistant logging that can be exported natively as immutable CSV security audit trails and vector-ready performance graphs for forensic review and compliance reporting.</li>
         </ul>
 
         <h2>The Vision</h2>
-        <p>Whether securing a satellite constellation in orbit or a power grid on Earth, Shieldix is the immune system for the edge-computing era. We are building a decentralized, scalable standard for autonomous protection.</p>
-
-        <!-- Side-by-Side Image Section -->
-        <div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0;">
-            <img src="photo.png" alt="Shieldix Autonomous Edge Security Visualization" style="max-width: 48%; height: auto; border-radius: 8px;">
-            <img src="photo-2.png" alt="Shieldix Dashboard and Analytics" style="max-width: 48%; height: auto; border-radius: 8px;">
-        </div>
-        <!-- End Image Section -->
-
+        <p>Whether securing a satellite constellation in orbit, an autonomous robot in the field, or a power grid on Earth, Shieldix serves as the immune system for the edge-computing era. We are building a decentralized, scalable standard for autonomous protection.</p>
     </div>
+
 <footer>
     <div class="container">
         <p>&copy; 2026 AstraForge AI. All rights reserved.</p>
