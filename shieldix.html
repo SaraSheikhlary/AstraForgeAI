@@ -41,11 +41,11 @@
             <li><strong>Live Threat Enforcement:</strong> Actively evaluates incoming traffic streams, maintaining normal operational baselines (ALLOW) while instantly triggering high-speed circuit-breakers to drop Layer 7 attack vectors (BLOCK) on impact.</li>
         </ul>
 
-        <!-- Live Hardware Gallery Section -->
+        <!-- Live Hardware Gallery Section (Click to Zoom) -->
         <div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-            <img src="a7.png" alt="Shieldix Autonomous Edge Engine Execution" style="max-width: 31%; height: auto; border-radius: 8px;">
-            <img src="a8.png" alt="Shieldix Live Control Center Dashboard" style="max-width: 31%; height: auto; border-radius: 8px;">
-            <img src="a9.png" alt="Shieldix Real-Time Telemetry & Latency Stability" style="max-width: 31%; height: auto; border-radius: 8px;">
+            <img src="a7.png" alt="Shieldix Autonomous Edge Engine Execution" style="max-width: 31%; height: auto; border-radius: 8px; cursor: pointer; transition: transform 0.2s ease-in-out;" onclick="openZoomModal(this)" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="a8.png" alt="Shieldix Live Control Center Dashboard" style="max-width: 31%; height: auto; border-radius: 8px; cursor: pointer; transition: transform 0.2s ease-in-out;" onclick="openZoomModal(this)" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="a9.png" alt="Shieldix Real-Time Telemetry & Latency Stability" style="max-width: 31%; height: auto; border-radius: 8px; cursor: pointer; transition: transform 0.2s ease-in-out;" onclick="openZoomModal(this)" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
         </div>
         <!-- End Image Section -->
 
@@ -77,5 +77,23 @@
         <p>&copy; 2026 AstraForge AI. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- Zoom Modal Overlay -->
+<div id="zoomModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.85); cursor: zoom-out;" onclick="closeZoomModal()">
+    <img id="zoomedImage" style="margin: auto; display: block; max-width: 90%; max-height: 90vh; margin-top: 5vh; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+</div>
+
+<!-- Zoom Modal Script -->
+<script>
+    function openZoomModal(element) {
+        document.getElementById('zoomModal').style.display = 'block';
+        document.getElementById('zoomedImage').src = element.src;
+    }
+
+    function closeZoomModal() {
+        document.getElementById('zoomModal').style.display = 'none';
+    }
+</script>
+
 </body>
 </html>
