@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroShield AI | AstraForge</title>
-    <link rel="stylesheet" href="style.css?v=14">
+    <title>About Us | AstraForge AI</title>
+    <link rel="stylesheet" href="style.css?v=15">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
@@ -13,26 +13,73 @@
 </div>
     <nav>
         <a href="index.html">About Us</a>
-        <a href="shieldix.html">Shieldix</a>
         <a href="astroshield.html">AstroShield AI</a>
+        <a href="shieldix.html">Shieldix</a>
         <a href="astrielle.html">Astrielle AI</a>
         <a href="axiom-os.html">Axiom OS</a>
         <a href="contact.html">Contact Us</a>
     </nav>
 
     <div class="container">
-        <h1>Astroshield AI</h1>
-        <p>Astroshield AI is a high-performance Digital Twin platform for Space Traffic Management (STM). It processes real-time TLE telemetry for the active Low Earth Orbit (LEO) population, utilizing advanced spatial algorithms to predict kinetic collision risks and safeguard critical space infrastructure.</p>
+        <h1>About AstraForge AI</h1>
+        <p>AstraForge AI develops high-performance computational digital twins, autonomous edge security protocols, and intelligent space infrastructure engineered for extreme operational environments across orbital and planetary systems.</p>
 
+        <!-- Product Ecosystem Section -->
         <div class="tech-box">
-            <h2>Key Features</h2>
+            <h2>Core Product Ecosystem &amp; Development Stages</h2>
+
+            <div class="ecosystem-list">
+                <!-- 1. AstroShield AI -->
+                <div class="ecosystem-item">
+                    <h3>1. AstroShield AI <span class="badge live">STAGE: LIVE &amp; DEPLOYED</span></h3>
+                    <p><strong>Orbital Flight Dynamics &amp; Conjunction Risk Digital Twin</strong></p>
+                    <p>Decoupled enterprise digital twin platform for real-time Space Traffic Management (STM). Processes live CelesTrak TLE telemetry across LEO, MEO, and GEO, using SciPy cKDTree 3D spatial queries for sub-millisecond proximity analysis. Calculates collision probability (P<sub>c</sub> ≥ 10⁻⁴) aligned with NASA/CARA safety standards and determines dynamic Δv evasion budgets.</p>
+                    <p>
+                        🔗 <strong>Live App:</strong> <a href="https://astroshield-ai.com" target="_blank">https://astroshield-ai.com</a><br>
+                        📄 <strong>Zenodo DOI:</strong> <a href="https://doi.org/10.5281/zenodo.23632814" target="_blank">10.5281/zenodo.23632814</a>
+                    </p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+
+                <!-- 2. Shieldix AI -->
+                <div class="ecosystem-item">
+                    <h3>2. Shieldix AI <span class="badge prototyping">STAGE: ACTIVE PROTOTYPING &amp; HARDWARE-TESTED</span></h3>
+                    <p><strong>Decentralized Edge Cybersecurity Protocol</strong></p>
+                    <p>Zero-trust security protocol designed for satellite swarms and autonomous edge hardware. Features zero-downtime A/B memory isolation and microsecond swarm circuit-breakers. <strong>Hardware-tested on Raspberry Pi architecture</strong> and designed for deployment on NVIDIA Jetson edge nodes.</p>
+                    <p>📄 <a href="shieldix.html">View Shieldix Architecture Specification ↗</a></p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+
+                <!-- 3. DustHarbor -->
+                <div class="ecosystem-item">
+                    <h3>3. DustHarbor <span class="badge design">STAGE: SYSTEM DESIGN</span></h3>
+                    <p><strong>Zero-Gravity Dust Mitigation &amp; Habitat Environmental Infrastructure</strong></p>
+                    <p>Autonomous zero-gravity dust suppression and environmental monitoring system engineered to protect optical sensors, mechanical joint seals, and planetary habitat interfaces in lunar and Martian environments.</p>
+                </div>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+
+                <!-- 4. ECLSS Telemetry Twin -->
+                <div class="ecosystem-item">
+                    <h3>4. ECLSS Telemetry Twin <span class="badge validation">STAGE: RESEARCH &amp; VALIDATION</span></h3>
+                    <p><strong>Environmental Control &amp; Life Support System Digital Twin</strong></p>
+                    <p>Simulation and diagnostic pipeline modeling gas-phase dynamics, pressure decay micro-leaks, and sensor signal noise in space habitat life-support systems under off-world conditions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Technical Capabilities -->
+        <div class="tech-box">
+            <h2>AstroShield AI Technical Architecture</h2>
             <ul>
-                <li><strong>Spatial Physics Engine:</strong> Replaced brute-force proximity checks with a KD-Tree spatial indexing algorithm (via SciPy). This allows for sub-second conjunction analysis across 15,000+ orbital nodes by utilizing multi-dimensional binary search trees.</li>
-                <li><strong>Live TLE Ingestion Pipeline:</strong> Engineered a dynamic data pipeline that merges live Celestrak API traffic with debris cloud datasets (e.g., Iridium-33 fragments). Implemented data-source labeling to ensure ephemeris integrity and mission-ready verification.</li>
-                <li><strong>High-Fidelity 3D Situational Awareness:</strong> Developed a hardware-accelerated 3D environment that automatically categorizes and renders orbital objects. Implemented tactical color-filtering (Red-Threat-ID) to differentiate lethal debris from active assets in real time.</li>
-                <li><strong>Engineering-Grade Evasion Analytics:</strong> Built an autonomous maneuver module that calculates specific mission metrics, including Required Delta-V, Burn Duration (seconds), and Propellant Mass Cost (kg), achieving a theoretical maneuver success rate of &ge;92%.</li>
-                <li><strong>Environment-Agnostic Architecture:</strong> Architected a resilient backend using dynamic Base Directory logic and /tmp/ buffer handling, ensuring seamless stability across Local, Cloud, and high-latency environments.</li>
-                <li><strong>SGP4 Physics Integration:</strong> Leveraged Skyfield for rigorous SGP4 orbital propagation, accounting for atmospheric drag and geopotential perturbations to generate precise UTC state vectors.</li>
+                <li><strong>Spatial Physics Engine:</strong> Replaced brute-force proximity checks with a KD-Tree spatial indexing algorithm (via SciPy). Enables sub-second conjunction analysis across 15,000+ orbital nodes using multi-dimensional binary search trees.</li>
+                <li><strong>Live TLE Ingestion Pipeline:</strong> Dynamic data pipeline merging live CelesTrak API traffic with debris cloud datasets (e.g., Iridium-33 fragments). Features data-source labeling to guarantee ephemeris integrity.</li>
+                <li><strong>High-Fidelity 3D Situational Awareness:</strong> Hardware-accelerated 3D WebGL environment categorizing and rendering orbital objects with tactical color-filtering (Red-Threat-ID) for real-time risk isolation.</li>
+                <li><strong>Engineering-Grade Evasion Analytics:</strong> Autonomous maneuver module calculating Required Delta-V, Burn Duration (seconds), and Propellant Mass Cost (kg) with safety margins ≥25%.</li>
+                <li><strong>Decoupled Microservices Architecture:</strong> Containerized FastAPI/Celery backend with Redis state caching deployed on Render, isolated from the public Streamlit/GitHub Pages frontend wrapper.</li>
+                <li><strong>SGP4 Physics Integration:</strong> Leverages Skyfield for SGP4 orbital propagation, accounting for atmospheric drag and geopotential perturbations to yield precise UTC state vectors.</li>
             </ul>
         </div>
 
@@ -43,10 +90,11 @@
             <a href="s4.png" target="_blank"><img src="s4.png" alt="AstroShield AI Milestone 4"></a>
         </div>
     </div>
+
     <footer>
-    <div class="container">
-        <p>&copy; 2026 AstraForge AI. All rights reserved.</p>
-    </div>
-</footer>
+        <div class="container">
+            <p>&copy; 2026 AstraForge AI. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
