@@ -22,36 +22,39 @@
 
     <div class="container">
         <h1>AstroShield AI</h1>
-        <p>AstroShield AI is a high-performance Digital Twin platform for Space Traffic Management (STM). It processes real-time TLE telemetry for active orbital populations across Low Earth Orbit (LEO), utilizing advanced spatial algorithms to predict kinetic collision risks and safeguard critical space infrastructure.</p>
+        <p>AstroShield AI is a high-performance, self-contained Digital Twin platform for Space Traffic Management (STM). It processes real-time TLE telemetry for active orbital populations across Low Earth Orbit (LEO), utilizing advanced spatial algorithms and decoupled containerized pipelines to predict kinetic collision risks, inspect individual satellite telemetry, and safeguard critical space infrastructure.</p>
 
         <!-- Publication & Live App Links -->
         <div class="tech-box" style="margin-bottom: 25px;">
             <h2>Live Deployment &amp; Academic Publication</h2>
             <p>
                 <strong>Live Portal:</strong> <a href="https://astroshield-ai.com" target="_blank">https://astroshield-ai.com</a><br>
-                <strong>Zenodo Archival DOI:</strong> <a href="https://doi.org/10.5281/zenodo.23632814" target="_blank">10.5281/zenodo.23632814</a>
+                <strong>Zenodo Archival DOI:</strong> <a href="https://doi.org/10.5281/zenodo.23662217" target="_blank">10.5281/zenodo.23662217</a>
             </p>
         </div>
 
         <div class="tech-box">
             <h2>Key Features &amp; Technical Architecture</h2>
             <ul>
-                <li><strong>Spatial Physics Engine:</strong> Replaced brute-force proximity checks with a KD-Tree spatial indexing algorithm (via SciPy). This allows for sub-second conjunction analysis across 15,000+ orbital nodes by utilizing multi-dimensional binary search trees.</li>
-                <li><strong>Live TLE Ingestion Pipeline:</strong> Engineered a dynamic data pipeline that merges live CelesTrak API traffic with debris cloud datasets (e.g., Iridium-33 fragments). Implemented data-source labeling to ensure ephemeris integrity and mission-ready verification.</li>
-                <li><strong>High-Fidelity 3D Situational Awareness:</strong> Developed a hardware-accelerated 3D environment that automatically categorizes and renders orbital objects. Implemented tactical color-filtering (Red-Threat-ID) to differentiate lethal debris from active assets in real time.</li>
-                <li><strong>Engineering-Grade Evasion Analytics:</strong> Built an autonomous maneuver module that calculates specific mission metrics, including Required Delta-V, Burn Duration (seconds), and Propellant Mass Cost (kg), achieving a theoretical maneuver success rate of &ge;92%.</li>
-                <li><strong>Environment-Agnostic Architecture:</strong> Architected a resilient backend using dynamic Base Directory logic and /tmp/ buffer handling, ensuring seamless stability across Local, Cloud, and high-latency environments.</li>
-                <li><strong>SGP4 Physics Integration:</strong> Leveraged Skyfield for rigorous SGP4 orbital propagation, accounting for atmospheric drag and geopotential perturbations to generate precise UTC state vectors.</li>
+                <li><strong>Spatial Physics Engine:</strong> Replaced brute-force proximity checks with a compiled KD-Tree spatial indexing algorithm (`cKDTree` via SciPy)[cite: 2]. This allows for sub-3 millisecond conjunction analysis across 15,000+ orbital nodes by utilizing multi-dimensional binary search trees[cite: 2].</li>
+                <li><strong>Self-Contained Cloud Architecture:</strong> Engineered a high-performance, self-contained Streamlit Cloud architecture that eliminates external backend spin-down latencies, ensuring instantaneous UI responsiveness, persistent 24/7 operational availability, and zero cold-start delay.</li>
+                <li><strong>Granular Asset Telemetry Inspector:</strong> Features an interactive target satellite inspection module enabling operators to query individual catalog assets on-demand, analyzing real-time state vectors, local position-velocity covariance (RIC), available $\Delta v$ propellant safety margins, and autonomous readiness[cite: 2].</li>
+                <li><strong>High-Fidelity 3D Situational Awareness:</strong> Developed a hardware-accelerated 3D WebGL environment that automatically categorizes and renders orbital shells and active satellite populations, implementing tactical color-filtering to differentiate lethal debris from active assets in real time[cite: 2].</li>
+                <li><strong>Engineering-Grade Evasion Analytics:</strong> Built an autonomous maneuver module that calculates specific mission metrics, including Required Delta-V, Burn Vectors, Propellant Mass Cost (kg), and NASA/CARA-aligned collision probability ($P_c$) reduction down to negligible safety thresholds (e.g., $6.23 \times 10^{-24}$)[cite: 2].</li>
+                <li><strong>SGP4 Physics &amp; Uncertainty Integration:</strong> Leveraged rigorous SGP4 analytical propagation and dual-covariance B-plane projections (validated via Monte Carlo ensemble analysis, $W = 0.9995$) to account for ephemeris uncertainties and generate precise UTC state vectors[cite: 2].</li>
             </ul>
         </div>
 
         <h2>Platform Screenshots &amp; Milestones</h2>
         <div class="image-gallery">
+            <a href="s0.png" target="_blank"><img src="s0.png" alt="AstroShield AI Milestone 1"></a>
             <a href="s1.png" target="_blank"><img src="s1.png" alt="AstroShield AI Milestone 1"></a>
             <a href="s2.png" target="_blank"><img src="s2.png" alt="AstroShield AI Milestone 2"></a>
             <a href="s3.png" target="_blank"><img src="s3.png" alt="AstroShield AI Milestone 3"></a>
             <a href="s4.png" target="_blank"><img src="s4.png" alt="AstroShield AI Milestone 4"></a>
             <a href="s5.png" target="_blank"><img src="s5.png" alt="AstroShield AI Milestone 5"></a>
+            <a href="s6.png" target="_blank"><img src="s6.png" alt="AstroShield AI Milestone 5"></a>
+            <a href="s7.png" target="_blank"><img src="s7.png" alt="AstroShield AI Milestone 5"></a>
         </div>
     </div>
 
