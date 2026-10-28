@@ -60,7 +60,7 @@
 
             <h3>4. Operational Latency and Ephemeris Synchronization Profile</h3>
             <ul>
-                <li><strong>Initial Connection Latency:</strong> Near-instantaneous page loading and session initialization, enabled by the self-contained frontend architecture running directly on Streamlit Cloud without external backend spin-down delays.</li>
+                <li><strong>Initial Connection Latency:</strong> Secure session initialization on Streamlit Cloud coupled with an asynchronous, cloud-hosted FastAPI backend microservice (deployed on Render). Incorporates asynchronous timeout handling and local fallback resilience to manage cloud service cold-start profiles.</li>
                 <li><strong>Telemetry Refresh Bounds:</strong> Telemetry synchronization frequency is dictated by upstream CelesTrak ephemeris updates and background cKDTree index reconstruction, prioritizing backend mathematical rigor and numerical precision over instantaneous client-side rendering.</li>
             </ul>
         </div>
